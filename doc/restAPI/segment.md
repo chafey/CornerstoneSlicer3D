@@ -40,14 +40,15 @@ available response representations
 
 * application/json
 
-
+```javascript
 {
     "status" : "created | running | completed",
     "TBD" : "support multiple segmentation results in one job?"
     "details" : {
-        "TBD" :"Details about segmentation - dimensions, etc"
+        "TBD" : "Details about segmentation - dimensions, etc"
     }
 }
+```
 
 ### DELETE
 #### /segment
