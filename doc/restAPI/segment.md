@@ -40,11 +40,12 @@ available response representations
 
 * application/json
 
+
 {
     "status" : "created | running | completed",
-    // TBD: support multiple segmentation results in one job?
+    "TBD" : "support multiple segmentation results in one job?"
     "details" : {
-        // TBD Details about segmentation - dimensions, etc
+        "TBD" :"Details about segmentation - dimensions, etc"
     }
 }
 
