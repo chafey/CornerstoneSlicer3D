@@ -1,4 +1,4 @@
-# /volume
+# /segmentation
 
 Provides methods to get and delete Slicer 3D segmentation objects
 
@@ -9,7 +9,7 @@ Provides methods to get and delete Slicer 3D segmentation objects
 ### GET
 #### /segmentation/{{id}}
 
-Returns the specified volume definition.
+Returns the specified segmentation resource.
 
 available response representations
 
