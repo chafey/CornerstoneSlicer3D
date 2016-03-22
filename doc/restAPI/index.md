@@ -1,5 +1,7 @@
 # REST API Index
 
-* [examine](examine.md) a DICOM dataset
-* [segment](segment.md) a volume or image
-* Get a [DICOM SEGMENTATION](DICOMSEG.md) SOP Instance from a segmentation object
+NOTE: All JSON documents are defined using [json schema](http://json-schema.org/)
+
+* [examineJob](examineJob.md) - examine a DICOM Dataset for volumes and algorithms that can be run against those volumes
+* [segmentationJob](segmentationJob.md) - resource for a computation job that produces segmentation resources
+* [DICOMSEG](DICOMSEG.md) - resource for a DICOM P10 Segmentation SOP Instance
