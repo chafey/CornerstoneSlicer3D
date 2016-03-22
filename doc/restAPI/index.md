@@ -1,15 +1,16 @@
 # REST API Index
 
-NOTE: All JSON documents are defined using [json schema](http://json-schema.org/)
+All JSON documents are defined using [JSON Schema](http://json-schema.org/)
 
 ## Jobs
 
-* [examineJob](examineJob.md) - examine a DICOM Dataset for volumes and algorithms that can be run against those volumes
-* [segmentationJob](segmentationJob.md) - resource for a computation job that produces segmentation resources
-* [DICOMSEG](DICOMSEG.md) - resource for a DICOM P10 Segmentation SOP Instance
+* [examineJob](examineJob.md) - resource for examine jobs that examine a DICOM Dataset and produces volume resources and
+  algorithms that can be run against those volumes
+* [segmentationJob](segmentationJob.md) - resource for segmentation jobs that produces segmentation resources
+* [DICOMSEG](DICOMSEG.md) - resource for generating a DICOM P10 Segmentation SOP Instance for a segmentation resource
 
 ## Objects
 
-* [volume](volume.md) - A 3D Volume
-* [segmentation](segmentation.md) - A segmentation object
+* [volume](volume.md) - resource representation a 3D volume
+* [segmentation](segmentation.md) - resource representing a segmentation
 

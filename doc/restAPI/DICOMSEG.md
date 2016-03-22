@@ -9,7 +9,7 @@ created by slicer.
 ### POST
 #### /DICOMSEG
 
-Returns the DICOM P10 Segmentation SOP Instance for the specified segmentations
+Returns the DICOM P10 Segmentation SOP Instance for the specified segmentation resources
 
 acceptable request representations
 
