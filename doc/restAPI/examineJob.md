@@ -87,12 +87,12 @@ Example
     "result" : {
         "volumes" : [
             {
-                "volumeUrl" : "http://localhost/volume/e64ac045-a8a8-4ac0-8b2f-0c77e3a02627
+                "volumeUrl" : "http://localhost/volume/7599abe3-e899-4d7d-9924-33847a959368"
             }
         ],
         "segmentations" : [
             {
-                "segmentationUrl" : "http://localhost/volume/e64ac045-a8a8-4ac0-8b2f-0c77e3a02627
+                "segmentationUrl" : "http://localhost/volume/62704070-b8ff-4173-a9af-a9b08a5b1193"
             }
         ]
     }

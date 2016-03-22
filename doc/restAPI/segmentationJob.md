@@ -5,7 +5,7 @@ or image and produce segmentations which can be converted into DICOM SEG SOP Ins
 ## Methods
 
 ### POST
-#### /segment
+#### /segmentationJob
 
 Creates a new segmentation job and returns a JSON response describing the job.  After a job
 is created, a caller may issue a GET request to get the status of the job and any results.  A
@@ -16,11 +16,16 @@ acceptable request representations
 
 * application/json
 
+Example
+
 ```javascript
 {
-  "examineJob" : "URL to examine job"
-  "volumeId" : "volumeId",
-  "seedPoint" : "Seed Point in DICOM Patient Coordinate system x,y,z"
+  "volumeUrl" : "http://localhost/volume/7599abe3-e899-4d7d-9924-33847a959368",
+  "seedPoint" : {
+    "x" : 64.0,
+    "y" : 32.0,
+    "z" : -32.0
+  }
 }
 
 
@@ -30,14 +35,18 @@ available response representations
 
 * application/json
 
+Example
+
 ```javascript
+
 {
-    "segmentJob" : "URL to segment job resource"
+    "segmentationJobUrl" : "http://localhost/segmentationJob/62704070-b8ff-4173-a9af-a9b08a5b1193"
 }
+
 ```
 
 ### GET
-#### /segment
+#### /segmentationJob
 
 Returns the segmentation job result.
 
@@ -45,26 +54,31 @@ available response representations
 
 * application/json
 
+Example
+
 ```javascript
+
 {
-    "status" : "created | running | completed",
-    "percentComplete" : "number 0-100",
-    "request" : {
-      "examineJob" : "URL to examine job"
-      "volumeId" : "volumeId",
-      "seedPoint" : "Seed Point in DICOM Patient Coordinate system x,y,z"
+    "status" : "completed",
+    "percentComplete" : 100,
+    "segmentationJobRequest" : {
+          "volumeUrl" : "http://localhost/volume/7599abe3-e899-4d7d-9924-33847a959368",
+          "seedPoint" : {
+            "x" : 64.0,
+            "y" : 32.0,
+            "z" : -32.0
+          }
     },
     "result" : {
-        "segmentation"
-    }
-    "TBD" : "support multiple segmentation results in one job?"
-    "details" : {
-        "TBD" : "Details about segmentation - dimensions, etc"
+        "segmentations" : [
+            "http://localhost/segmentationJob/930d8999-4ba4-43f5-b667-0c90183a2c02"
+        ]
     }
 }
+
 ```
 
 ### DELETE
-#### /segment
+#### /segmentationJob
 
 Deletes the specified segmentation job.
