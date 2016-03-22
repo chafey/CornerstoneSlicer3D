@@ -87,12 +87,17 @@ Example
     "result" : {
         "volumes" : [
             {
+                "name" : "CT Chest With Contrast",
                 "volumeUrl" : "http://localhost/volume/7599abe3-e899-4d7d-9924-33847a959368"
+            },
+            {
+                "name" : "CT Chest Without Contrast",
+                "volumeUrl" : "http://localhost/volume/93782dfc-a4b5-4f93-a49a-6892b24c8fdc"
             }
         ],
-        "segmentations" : [
+        "algorithms" : [
             {
-                "segmentationUrl" : "http://localhost/volume/62704070-b8ff-4173-a9af-a9b08a5b1193"
+                "name" : "Airways Segmentation"
             }
         ]
     }

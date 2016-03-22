@@ -5,55 +5,24 @@ created by slicer.
 
 ## Methods
 
-### GET
+
+### POST
 #### /DICOMSEG
 
-Creates a new segmentation job and returns a JSON response describing the job.  After a job
-is created, a caller may issue a GET request to get the status of the job and any results.  A
-caller may also issue a DELETE request to cancel/delete a job.  Since segmentation jobs may
-be time consuming, a caller may "poll" via GET requests to monitor progress.
+Returns the DICOM P10 Segmentation SOP Instance for the specified segmentations
 
 acceptable request representations
 
 * application/json
 
-```javascript
-{
-  "examineJob" : "URL to examine job"
-  "volumeId" : "volumeId",
-  "seedPoint" : "Seed Point in DICOM Patient Coordinate system x,y,z"
-}
-
-
-```
-
-available response representations
-
-* application/json
+Example
 
 ```javascript
 {
-    "segmentJob" : "URL to segment job resource"
+    "segmenationUrls" : [
+        "http://localhost/segmentationJob/930d8999-4ba4-43f5-b667-0c90183a2c02"
+    ]
 }
-```
-
-### GET
-#### /segment
-
-Returns the DICOM P10 Segmentation SOP Instance.
-
-acceptable request representations
-
-* application/json
-
-```javascript
-{
-  "segmentJob" : "URL to segment job"
-  "volumeId" : "volumeId",
-  "seedPoint" : "Seed Point in DICOM Patient Coordinate system x,y,z"
-}
-
-
 
 available response representations
 

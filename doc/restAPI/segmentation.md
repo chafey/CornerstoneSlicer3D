@@ -1,6 +1,6 @@
 # /volume
 
-Provides methods to get and delete 3D volumes
+Provides methods to get and delete Slicer 3D segmentation objects
 
 ## Methods
 
@@ -22,7 +22,8 @@ Example
 ```javascript
 
 {
-    "name" : "Airways Segmentation",
+    "name" : "Airways",
+    "algorithmName" : "Airways Segmentation",
     "segmentationJobUrl" : "http://localhost/segmentationJob/62704070-b8ff-4173-a9af-a9b08a5b1193",
     "volumeUrl" : "http://localhost/volume/7599abe3-e899-4d7d-9924-33847a959368",
     "dimensions" : {
@@ -48,7 +49,8 @@ Example
 ### DELETE
 #### /segmentation/{{id}}
 
-Deletes the specified volume.
+Deletes the specified segmentation.
 
 HTTP Status Codes
 200 - Resource successfully deleted
+
