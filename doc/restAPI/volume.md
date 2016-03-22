@@ -9,7 +9,7 @@ Provides methods to get and delete 3D volumes
 ### GET
 #### /volume/{{id}}
 
-Returns the specified volume definition.
+Returns the specified volume definition and list of algorithms that can be run on that volume
 
 available response representations
 
@@ -38,7 +38,13 @@ Example
         "x" : 0.0,
         "y" : 0.0,
         "z" : 0.0
-    }
+    },
+    "algorithms" : [
+        {
+            "id" : "8239eaaf-9280-48f7-989e-470b93799a27",
+            "name" : "Airways Segmentation"
+        }
+    ]
 }
 
 ```
