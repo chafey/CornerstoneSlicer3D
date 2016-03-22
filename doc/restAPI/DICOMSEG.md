@@ -19,7 +19,7 @@ Example
 
 ```javascript
 {
-    "segmenationUrls" : [
+    "segmentationUrls" : [
         "http://localhost/segmentation/930d8999-4ba4-43f5-b667-0c90183a2c02"
     ]
 }

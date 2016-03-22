@@ -23,6 +23,7 @@ Example
 
 {
     "name" : "Airways",
+    "algorithmId" : "8239eaaf-9280-48f7-989e-470b93799a27",
     "algorithmName" : "Airways Segmentation",
     "segmentationJobUrl" : "http://localhost/segmentationJob/62704070-b8ff-4173-a9af-a9b08a5b1193",
     "volumeUrl" : "http://localhost/volume/7599abe3-e899-4d7d-9924-33847a959368",

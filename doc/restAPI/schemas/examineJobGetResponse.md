@@ -48,20 +48,37 @@
             "description" : "the result of the examine job completing",
             "type" : "object",
             "properties" : {
-                "volumes" : {
+                "volumeUrls" : {
                     "type" : "array",
                     "items" : {
-                        "description" : "URL to volume",
-                        "type" : "string"
+                        "description" : "3D Volume",
+                        "type" : "object",
+                        "properties" : {
+                            "name" : {
+                                "type" : "string",
+                            },
+                            "volumeUrl" : {
+                                "type" : "string",
+                            },
+                            "algorithms" : {
+                                "type" : "array",
+                                "items" : {
+                                    "description" : "Algorithms that can be run on this volume",
+                                    "type" : "object",
+                                    "properties" : {
+                                        "id" : {
+                                            "type" : "string",
+                                        },
+                                        "name" : {
+                                            "type" : "string",
+                                        },
+                                    }
+                                }
+                            }
+                        }
+
                     }
                 },
-                "segmentations" : {
-                    "type" : "array",
-                    "items" : {
-                        "description" : "URL to segmentation object",
-                        "type" : "string"
-                    }
-                }
             }
 
         }

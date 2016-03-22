@@ -85,19 +85,20 @@ Example
         }
     },
     "result" : {
-        "volumes" : [
+        "volumeUrls" : [
             {
                 "name" : "CT Chest With Contrast",
-                "volumeUrl" : "http://localhost/volume/7599abe3-e899-4d7d-9924-33847a959368"
+                "volumeUrl" : "http://localhost/volume/7599abe3-e899-4d7d-9924-33847a959368",
+                "algorithms" : [
+                    {
+                        "id" : "8239eaaf-9280-48f7-989e-470b93799a27",
+                        "name" : "Airways Segmentation"
+                    }
+                ]
             },
             {
                 "name" : "CT Chest Without Contrast",
                 "volumeUrl" : "http://localhost/volume/93782dfc-a4b5-4f93-a49a-6892b24c8fdc"
-            }
-        ],
-        "algorithms" : [
-            {
-                "name" : "Airways Segmentation"
             }
         ]
     }
