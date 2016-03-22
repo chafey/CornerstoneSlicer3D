@@ -48,7 +48,7 @@ Example
 ```
 
 ### GET
-#### /segmentationJob
+#### /segmentationJob/{{id}}
 
 Returns the segmentation job result.
 
