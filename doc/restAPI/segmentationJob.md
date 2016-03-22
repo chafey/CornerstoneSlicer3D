@@ -22,7 +22,7 @@ Example
 ```javascript
 {
   "volumeUrl" : "http://localhost/volume/7599abe3-e899-4d7d-9924-33847a959368",
-  "algorithmName" : "Airways Segmentation",
+  "algorithmId" : "8239eaaf-9280-48f7-989e-470b93799a27", // Airways Segmentation
   "seedPoint" : {
     "x" : 64.0,
     "y" : 32.0,
@@ -98,8 +98,10 @@ Example of completed segmentationJob
           }
     },
     "result" : {
-        "segmentationUrls" : [
-            "http://localhost/segmentation/930d8999-4ba4-43f5-b667-0c90183a2c02"
+        "segmentations" : [
+            {
+                "segmentationUrl" : "http://localhost/segmentation/930d8999-4ba4-43f5-b667-0c90183a2c02"
+            }
         ]
     }
 }
