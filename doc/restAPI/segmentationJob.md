@@ -109,6 +109,6 @@ Example of completed segmentationJob
 ```
 
 ### DELETE
-#### /segmentationJob
+#### /segmentationJob/{{id}}
 
 Deletes the specified segmentation job.
