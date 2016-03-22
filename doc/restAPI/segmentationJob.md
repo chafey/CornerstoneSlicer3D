@@ -99,7 +99,7 @@ Example of completed segmentationJob
     },
     "result" : {
         "segmentations" : [
-            "http://localhost/segmentationJob/930d8999-4ba4-43f5-b667-0c90183a2c02"
+            "http://localhost/segmentation/930d8999-4ba4-43f5-b667-0c90183a2c02"
         ]
     }
 }
